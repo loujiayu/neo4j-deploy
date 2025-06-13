@@ -20,5 +20,5 @@ HEALTHCHECK --interval=30s --timeout=30s --retries=3 \
 VOLUME /data
 
 # Set the entrypoint to the default Neo4j entrypoint
-ENTRYPOINT ["/sbin/tini", "-g", "--", "/docker-entrypoint.sh"]
+ENTRYPOINT ["tini", "-g", "--", "/startup/docker-entrypoint.sh"]
 CMD ["neo4j"]
