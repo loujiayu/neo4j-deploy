@@ -60,5 +60,5 @@ jobs:
         with:
           app-name: 'neo4j'
           slot-name: 'Production'
-          images: 'adsuxmsanregistry.azurecr.io/${{ secrets.AZUREAPPSERVICE_CONTAINERUSERNAME_1EB1B2E9E05E480799BB7294BDCA7D37 }}/neo4j:${{ github.sha }}'
+          images: 'adsuxmsanregistry.azurecr.io/neo4j/neo4j:${{ github.sha }}'
           
